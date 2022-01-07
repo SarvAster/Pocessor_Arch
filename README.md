@@ -25,9 +25,9 @@ de compilation RISC-V est installée sur votre machine
 
 * Ajout des chemins vers les outils Vivado: 
 
-`source /opt/Xilinx/Vivado/2019/settings64.sh` 
+`source /tools/Xilinx/Vivado/2019.1/settings64.sh` 
 
-Remplacer */opt/* par le chemin où Vivado est installé sur votre machine
+Remplacer éventuellement */tools/* par le chemin où Vivado est installé sur votre machine
 
 Makefiles
 ---------
@@ -37,17 +37,17 @@ Makefiles
 
 Test de l'instruction lui :
 
-`cd implem && make run_simu PROG=lui `
+`cd implem && make simulation PROG=lui `
 
 ### Synthétiser
 
 Test des leds sur carte : 
 
-`cd implem && make run_fpga PROG=test_led_x31`
+`cd implem && make fpga PROG=test_led_x31`
 
 Space Invader sur carte :
 
-`cd implem && make run_fpga PROG=invader LIB=libfemto`
+`cd implem && make fpga PROG=invader LIB=libfemto`
 
 ### Autres
 
