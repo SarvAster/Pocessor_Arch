@@ -20,8 +20,8 @@ quiet-command = $(if $(filter 1, $(VERB)),$(1), $(if $(2),@echo $(2) && ($(1)) >
 VERBOSE :=-intstyle xflow # mettre xflow ou silent
 
 ## RISCV Toolchain
-TOOLCHAIN_DIR ?= /opt/riscv-cep-tools/bin
-PREFIX        ?= riscv32-unknown-elf-
+TOOLCHAIN_DIR ?= /usr/bin
+PREFIX        ?= riscv64-unknown-elf-
 AS      := $(TOOLCHAIN_DIR)/$(PREFIX)as
 CC      := $(TOOLCHAIN_DIR)/$(PREFIX)gcc
 LD      := $(TOOLCHAIN_DIR)/$(PREFIX)ld
