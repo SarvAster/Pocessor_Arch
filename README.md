@@ -38,14 +38,15 @@ Installation sur votre propre ordinateur
 
 ## Dépendances
 
+Nous fournissons un script d'installation automatique pour Debian qui installe Vivado, la chaîne de compilation RISC-V et les dépendances. Si vous voulez installer manuellement, il vous faudra :
 * *Vivado* -> La version minimale *19.1 WebPAck Edition* est requise pour faire fonctionner le contrôleur HDMI ([Téléchargement de Vivado](https://www.xilinx.com/support/download.html))
-* *Toolchain gcc-riscv* -> Elle peut être compilée et installée à l'aide du [dépôt Outils](https://gricad-gitlab.univ-grenoble-alpes.fr/riscv-ens/outils))
+* *Toolchain gcc-riscv* -> Le plus simple est d'installer le paquet adéquat (par exemple, sous Debian `sudo apt install gcc-riscv-unknown-elf`). Elle peut aussi être compilée et installée à l'aide du [dépôt Outils](https://gricad-gitlab.univ-grenoble-alpes.fr/riscv-ens/outils)
 
 ## Environnement
 
 Pour pouvoir utiliser les Makefiles du projet afin de simuler/synthetiser les modèles matériels VHDL et de compiler les programes de test et applications, il faut faire connaître à son environnement de travail les chemins vers les outils utilisés :
 
-* Ajout du chemin vers la chaîne de compilation dans le PATH:
+* Si vous avez installé la chaîne de compilation en clonant le dépôt outil (cette étape n'est pas nécessaire si vous avez installé la chaîne de compilation via un paquet), ajout du chemin vers la chaîne de compilation dans le PATH:
 
 `export PATH=${PATH}:/opt/riscv-cep-tools/bin`
 
