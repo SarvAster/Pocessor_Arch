@@ -7,6 +7,7 @@ Faire un clone pour récupérer le projet.
 `git clone git@gitlab-student.centralesupelec.fr:comparch/processeur.git`
 
 Les fichiers du TP se trouvent normalement dans le répertoire `processeur` : `cd processeur`
+
 Makefiles
 ---------
 
