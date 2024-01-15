@@ -34,7 +34,7 @@ CFLAGS        := -Os -march=rv32i -mabi=ilp32 -mcmodel=medany -ffunction-section
 CFLAGS_FEMTO  := -I$(FEMTO_DIR)/libfemto/include -I$(FEMTO_DIR)/env/common -I$(FEMTO_DIR)/env/common/rv32 -DENV_FPGA=1
 
 LDFLAGS       :=
-LDFLAGS_FEMTO := -nodefaultlibs -nostartfiles -nostdlib -nostdinc -static -Wl,--nmagic -Wl,--gc-sections
+LDFLAGS_FEMTO := -nodefaultlibs -nostartfiles -nostdlib -nostdinc -static -Wl,--nmagic -Wl,--gc-sections -march=rv32i -mabi=ilp32
 LDFLAGS_ASM   := -b elf32-littleriscv
 
 ODFLAGS := --section=.text
