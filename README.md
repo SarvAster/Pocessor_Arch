@@ -38,7 +38,7 @@ Installation sur votre propre ordinateur
 
 ## Dépendances
 
-Nous fournissons un script d'installation automatique pour Debian qui installe Vivado, la chaîne de compilation RISC-V et les dépendances. Si vous voulez installer manuellement, il vous faudra :
+Nous fournissons un [script d'installation](https://gitlab-student.centralesupelec.fr/comparch/processeur/-/blob/master/install.sh) automatique pour Debian qui installe Vivado, la chaîne de compilation RISC-V et les dépendances. Si vous voulez installer manuellement, il vous faudra :
 * *Vivado* -> La version minimale *19.1 WebPAck Edition* est requise pour faire fonctionner le contrôleur HDMI ([Téléchargement de Vivado](https://www.xilinx.com/support/download.html))
 * *Toolchain gcc-riscv* -> Le plus simple est d'installer le paquet adéquat (par exemple, sous Debian `sudo apt install gcc-riscv-unknown-elf`). Elle peut aussi être compilée et installée à l'aide du [dépôt Outils](https://gricad-gitlab.univ-grenoble-alpes.fr/riscv-ens/outils)
 
